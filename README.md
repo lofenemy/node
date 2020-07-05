@@ -1,5 +1,8 @@
 # Advanced concepts Node
 
+Here will be described a few important Advanced NodeJS concepts.
+Before getting start, let's take a look at very base introduce to understand what NodeJS is and what the purpose of using it.
+
 Node JS is a platform for creating server side application using javascript language.
 It was creating as powerful system, which alows to use all js concepts without any problems with perfomance.
 
