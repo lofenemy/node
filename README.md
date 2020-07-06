@@ -16,3 +16,6 @@ In majority of cases C++ uses as a powerful tool to make massive (in terms of ti
 
 The one of the most useful library inside of Node is library libuv which is written on C++ fully.
 The second a very important component of Node is V8 engine which is using as core engine for Google Chrome browser. It’s a necessary core of iterperatating and involving javascript code.
+
+
+// Event loop. Concurency in Node with through libuv library.
