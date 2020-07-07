@@ -35,4 +35,5 @@ Is that written on C++?
 What kind of problems resolve it?
 
 Node is Signle Threaded, but some Node modules are not.
+Some libuv functions can execute outside of Event loop of Node and be more efficient.
 
