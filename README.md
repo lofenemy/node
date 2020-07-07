@@ -26,7 +26,7 @@ The second a very important component of Node is V8 engine which is using as cor
 Event loop is a kind of infinite cycle. Each iteration is called as 'tick'.  Here there is analogie of tack of CPU. But unlike tacts, the cycle of event loop can go on for long time. 
 
 On each tick, event loop checks 3 conditons
-1) Is there the process with undefined or unresolved setTimeout, setInterval or setImmediate or callback for that.
+1) Is there the process with undefined or unresolved setTimeout, setInterval or setImmediate or callback for that. Or should we execute callback relevant callback from callback queu.
 2) Is there unfinished or unresolved operations with large process (such as FS modules and etc) // fs module works with file system of operation system and actually it's the one of the most weight operations for Node.
 3) Is there pendng operations with OS (such as listening of ports, requests) 
 
