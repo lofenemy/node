@@ -29,3 +29,5 @@ On each tick, event loop checks 3 conditons
 1) Is there the process with undefined or unresolved setTimeout, setInterval or setImmediate or callback for that.
 2) Is there unfinished or unresolved operations with large process (such as FS modules and etc) // fs module works with file system of operation system and actually it's the one of the most weight operations for Node.
 3) Is there pendng operations with OS (such as listening of ports, requests) 
+
+Is the event loop structure of data and manipulation of that? Or just aproach to resolve some issues? Or just big function which run every tick?
