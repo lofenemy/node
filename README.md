@@ -37,3 +37,5 @@ What kind of problems resolve it?
 Node is Signle Threaded, but some Node modules are not.
 Some libuv functions can execute outside of Event loop of Node and be more efficient.
 Node has additional thread to execute some of heavy tasks.
+
+Variable process.env.UV_THREADPOOL_SIZE controls the number of threadpools which will be runned as space for execution.
