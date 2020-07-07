@@ -21,3 +21,6 @@ The second a very important component of Node is V8 engine which is using as cor
 // Event loop. Concurency in Node with through libuv library.
 // Require function execute all code inside of module as a usual javascript code then caches it and import that as usual variable
 // When event loop has no any functions for executing it shots down, until any function will be received as function for executing.
+
+
+Event loop is a kind of infinite cycle. Each iteration is called as 'tick'.  Here there is analogie of tack of CPU. But unlike tacts, the cycle of event loop can go on for long time. 
