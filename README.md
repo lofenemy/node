@@ -31,3 +31,5 @@ On each tick, event loop checks 3 conditons
 3) Is there pendng operations with OS (such as listening of ports, requests) 
 
 Is the event loop structure of data and manipulation of that? Or just aproach to resolve some issues? Or just big function which run every tick?
+Is that written on C++? 
+What kind of problems resolve it?
