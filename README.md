@@ -33,3 +33,6 @@ On each tick, event loop checks 3 conditons
 Is the event loop structure of data and manipulation of that? Or just aproach to resolve some issues? Or just big function which run every tick?
 Is that written on C++? 
 What kind of problems resolve it?
+
+Node is Signle Threaded, but some Node modules are not.
+
