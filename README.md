@@ -56,5 +56,42 @@ Requests such as http, htttps use OS system to listen or make requests.
 Fs moduls use threadpool of libuv (4 by default)
 
 
+const https = require('https');
+const crypto = require('crypto');
+
+const start = Date.now() // return number of miliseconds
+
+function doRequest() {
+  https.requests('https://gogle.com', res => {
+    res.on('data', () => {})
+    res.end('end', () => {
+      console.log('request', Date.now() - start)
+    })
+  .end()
+}
+
+function doHash() {
+  crypto.pbkdf2('a', 'b', 100000, () => {
+    console.log('hash', Date.now() - start)
+  })
+}
+
+
+function doFs() {
+  fs.readFile('example.js', 'utf-8, () => {
+    console.log('fs', Date.now() - start)'
+  })
+}
+
+doRequest();
+doFs();
+doHash();
+doHash();
+doHash();
+doHash();
+
+
+
+
 
 
