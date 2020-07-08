@@ -48,3 +48,13 @@ Its default size is 4, but it can be changed at startup time by setting the UV_T
 Changed in version 1.30.0: the maximum UV_THREADPOOL_SIZE allowed was increased from 128 to 1024.
 
 The threadpool is global and shared across all event loops. When a particular function makes use of the threadpool (i.e. when using uv_queue_work()) libuv preallocates and initializes the maximum number of threads allowed by UV_THREADPOOL_SIZE. This causes a relatively minor memory overhead (~1MB for 128 threads) but increases the performance of threading at runtime."
+
+
+// All fs modules have access for threadpool.
+
+Requests such as http, htttps use OS system to listen or make requests.
+Fs moduls use threadpool of libuv (4 by default)
+
+
+
+
