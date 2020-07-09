@@ -1,29 +1,32 @@
 # Advanced concepts NodeJS
 
-// In this article I will call NodeJS as Node and will mean it as NodeJS as well.
+// In this article I will mention Node meaning NodeJS.
 
 Here will be described a few important Advanced Node concepts.
-Before getting start, let's take a look at very base introduce to understand what NodeJS is and what the purpose of using it.
+Before getting started, let's take a look at very base introduce to understand what Node is and what the purpose of using it.
 
-Node JS is a platform for creating server side application using javascript language.
-It was creating as powerful system, which allows to use all js concepts without any problems with performance.
+Node is a platform for creating server side application using javascript language.
+It was created as powerful system, which allows using all js concepts without any problems with performance.
 
 Because of not too deep elaboration of javascript language as language for server, it could create performance issues.
-What's why to make Node platform as performanced as possible, developers needed to use other approaches beside js.
+That's why in order to make Node platform as performanced as possible, developers needed to use other approaches apart from JS.
 
-NodeJS largely contained the C++ code, written to efficiently interact with modules such as a file system, internet system (http modules) and etc.
-In majority of cases C++ uses as a powerful tool to make massive (in terms of time or resources) algorithms/processes as powerful and efficient as possible.
+Node largely contained the C++ code, written to efficiently interact with modules such as a file system, internet system (http modules), etc.
+In the majority of cases C++ is used as a powerful tool to make massive (in terms of time or resources) algorithms/processes as powerful and effective as possible.
 
-The one of the most useful library inside of Node is library libuv which is written on C++ fully.
-The second a very important component of Node is V8 engine which is using as core engine for Google Chrome browser. It’s a necessary core of iterperatating and involving javascript code.
-
-
-// Event loop. Concurency in Node with through libuv library.
-// Require function execute all code inside of module as a usual javascript code then caches it and import that as usual variable
-// When event loop has no any functions for executing it shots down, until any function will be received as function for executing.
+One of the most useful libraries inside of Node is library libuv which is written on C++ fully.
+The second very important component of Node is V8 engine which is used as a core engine for Google Chrome browser.
+It’s a necessary core of iterperatating and involving javascript code.
 
 
-Event loop is a kind of infinite cycle. Each iteration is called as 'tick'.  Here there is analogie of tack of CPU. But unlike tacts, the cycle of event loop can go on for long time. 
+// Event loop. 
+// The require function executes all code inside of module as usual js code then caches it and imports that as usual variable
+// When event loop has no any functions for executing it shuts down, until any function is received as function for executing.
+
+
+Event loop is a kind of infinite cycle.
+Each iteration is called 'tick'.
+There is analogy of the tack of CPU. But unlike tacts, the cycle of event loop can go on for long time. 
 
 On each tick, event loop checks 3 conditons
 1) Is there the process with undefined or unresolved setTimeout, setInterval or setImmediate or callback for that. Or should we execute callback relevant callback from callback queu.
