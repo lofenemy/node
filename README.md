@@ -97,9 +97,6 @@ doHash();
 For sending request machine uses internal OS system. It means that it doesn't use neither libuv worker nor Node's event loop.
 It means that sending request(ping) doesn't work of event loop and can't block the working of Node. 
 
-
-
-
-
-
+You can send request on any side.
+ping www.google.com
 
