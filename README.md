@@ -118,3 +118,5 @@ if(cluster.isMaster) {
 
 But in the result all your work will be handled by CPU powerful, that's why creating 1k instances of Node will not resolve handling of the huge bunch of requests and work.
 
+Don't forget that be default the majority of libuv functions has sepate threads poll. It means that if we make 4 times cluster.fork() and then will use function of crypto(for example) we will have 16 threadpools on our machine. At the same time you can control it anytime separatly as well.
+
