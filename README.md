@@ -100,3 +100,21 @@ It means that sending request(ping) doesn't work of event loop and can't block t
 You can send request on any side.
 ping www.google.com
 
+Workers is a way to create a few instances of Node app. It creates also internal manager which redirect request on launched instanced depending on overloading.
+For example if one instance of Node is handling huge logic, manager redirects request on another less busy instance. 
+It creates illusion of multithreades, but against of that looking instaces are fully separated and can't share results of handling between each other. 
+It works the same for memory and anything else.
+
+// Example
+
+const cluster = require('cluster');
+
+if(cluster.isMaster) {
+  cluster.fork();
+  cluster.fork();
+} else {
+  // do some work
+}
+
+But in the result all your work will be handled by CPU powerful, that's why creating 1k instances of Node will not resolve handling of the huge bunch of requests and work.
+
