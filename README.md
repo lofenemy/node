@@ -128,5 +128,14 @@ Actually we need to understand defference between logical core in cpu and phisic
 As for mashines, it can have for exmaple, 2 cores - it's physical cores. But there are logical cores. It's kind of niddle level between physical hardware and our processes.
 For example we have one physical core but it executes 2 process at the same time. it means that we can have 1 physical core and 2 logical.
 
+pm2 library helps to manage clustering in your Node application.
+
+pm2 start node.js -i 0
+// -i controls how many instances should be run for node
+// if we set 0 it will run as many as you have logical cores.
+// for example I have 2 cores (duo core) and 2 logical for each physical core
+// it means pm2 runs 4 instances of Node
+
+Remember, that instances are fully separated applications and can be shared between each other.
 
 
