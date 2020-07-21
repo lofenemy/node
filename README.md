@@ -138,4 +138,5 @@ pm2 start node.js -i 0
 
 Remember, that instances are fully separated applications and can be shared between each other.
 
-
+// pm2 monit
+// pm2 show index
