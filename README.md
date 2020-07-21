@@ -140,3 +140,5 @@ Remember, that instances are fully separated applications and can be shared betw
 
 // pm2 monit
 // pm2 show index
+
+// show info about memory and cpu and how instances work with that
