@@ -122,3 +122,11 @@ Don't forget that be default the majority of libuv functions has sepate threads 
 
 Clusters - instances of Node. (with its own event loop and libuv's threadpolls)
 
+Let's take a brief and return back to CPU and mashine. 
+Actually we need to understand defference between logical core in cpu and phisical core. As I mentioned above, in the majority of cases physical work resolves a half of logical work. It means that even the worst algoritm will be fast enough if we have a very powerful phisical process. But almost forever all our work related to perfomace is find baclance between phisical hardware and logical work on mashine.
+
+As for mashines, it can have for exmaple, 2 cores - it's physical cores. But there are logical cores. It's kind of niddle level between physical hardware and our processes.
+For example we have one physical core but it executes 2 process at the same time. it means that we can have 1 physical core and 2 logical.
+
+
+
